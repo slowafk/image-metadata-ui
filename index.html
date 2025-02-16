@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Metadata UI</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Metadata Viewer</h1>
+        <input type="file" id="fileInput" webkitdirectory mozdirectory multiple>
+        <div id="imageGrid" class="image-grid"></div>
+        <h2>Upload Image to Repository</h2>
+        <form id="uploadForm">
+            <input type="file" id="uploadInput" accept="image/*">
+            <button type="submit">Upload Image</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
